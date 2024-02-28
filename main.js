@@ -58,6 +58,12 @@ function lexclick(lexrespd) {
         if (lexstim_item.dummy === 0) {
             corr_nonword++;
         }
+        #counting when participants said incorrectly yes to nonwords
+     } else if (lexstim_item.wstatus === 0 && lexrespd === 'yes') {
+        corrresp = 'no';
+        if (lexstim_item.dummy === 0) {
+            incorr_nonword++;
+        }
     }
     full_data += [lexstim_item.word,
         bool_dict[lexstim_item.wstatus],
@@ -71,7 +77,9 @@ function lexclick(lexrespd) {
     if (lextale_items.length > 0) {
         lex_next();
     } else {
-        let lex_score = (corr_word / 40 * 100 + corr_nonword / 20 * 100) / 2;
+       #let lex_score = (corr_word / 40 * 100 + corr_nonword / 20 * 100) / 2;
+        let lex_score = corr_word - 2*incorr_nonword;
+        #Number of correct words - 2*number of incorrectly responded nonwords
         document.getElementById('div_lex_main').style.display = 'none';
         document.getElementById('div_end').style.display = 'block';
 
