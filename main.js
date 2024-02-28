@@ -54,14 +54,14 @@ function lexclick(lexrespd) {
         if (lexstim_item.dummy === 0) {
             corr_word++;
         }
-    } else if (lexstim_item.wstatus === 0 && lexrespd === 'no') {
-        corrresp = 'yes';
-        if (lexstim_item.dummy === 0) {
-            corr_nonword++;
-        }
+ //   } else if (lexstim_item.wstatus === 0 && lexrespd === 'no') {
+ //       corrresp = 'yes';
+ //       if (lexstim_item.dummy === 0) {
+ //           corr_nonword++;
+ //       }
         // counting when participants said incorrectly yes to nonwords
      } else if (lexstim_item.wstatus === 0 && lexrespd === 'yes') {
-        corrresp = 'yes';
+        corrresp = 'no';
         if (lexstim_item.dummy === 0) {
             incorr_nonword++;
      }
@@ -79,19 +79,19 @@ function lexclick(lexrespd) {
         lex_next();
     } else {
          //let lex_score = (corr_word / 40 * 100 + corr_nonword / 20 * 100) / 2;
-       let lex_score = (corr_word - 2*incorr_nonword);
+       let lex_score = (corr_word - (2 * incorr_nonword));
         // Number of correct words - 2*number of incorrectly responded nonwords
         document.getElementById('div_lex_main').style.display = 'none';
         document.getElementById('div_end').style.display = 'block';
 
         console.log('Correctly identified real words: ' + corr_word +
-            '\nCorrectly identified pseudo words: ' + corr_nonword +
+            '\nIncorrectly identified pseudo words: ' + incorr_nonword +
             '\nLexTALE score: ' + lex_score + '%');
 
         document.getElementById('end_summary_id').innerHTML =
             '<span style="font-variant: small-caps;">LexTALE score: <b>' + lex_score.toFixed(2) +
             '%</span></b><br>Correctly identified real words: <b>' + corr_word +
-            '</b> (out of 40)<br>Correctly identified pseudo words: <b>' + corr_nonword +
+            '</b> (out of 40)<br>Incorrectly identified pseudo words: <b>' + incorr_nonword +
             '</b> (out of 20)' + get_times();
     }
 }
