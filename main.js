@@ -36,6 +36,7 @@ let basic_times = {};
 let full_data;
 let corr_word = 0;
 let corr_nonword = 0;
+let incorr_nonword = 0;
 // citP.corr_word + '+' + citP.corr_nonword
 let start_time = 0;
 let bool_dict = {
