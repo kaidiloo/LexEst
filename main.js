@@ -78,7 +78,7 @@ function lexclick(lexrespd) {
         lex_next();
     } else {
        #let lex_score = (corr_word / 40 * 100 + corr_nonword / 20 * 100) / 2;
-        let lex_score = corr_word - 2*incorr_nonword;
+        let lex_score = (corr_word - 2*incorr_nonword);
         #Number of correct words - 2*number of incorrectly responded nonwords
         document.getElementById('div_lex_main').style.display = 'none';
         document.getElementById('div_end').style.display = 'block';
