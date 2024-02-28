@@ -89,7 +89,7 @@ function lexclick(lexrespd) {
             '\nLexTALE score: ' + lex_score);
 
         document.getElementById('end_summary_id').innerHTML =
-            '<span style="font-variant: small-caps;">LexEst score: <b>' + lex_score +
+            '<span style="font-variant: small-caps;">LexTale score: <b>' + lex_score +
             '</b> (out of 60)' 
             '%</span></b><br>Correctly identified real words: <b>' + corr_word +
             '</b> (out of 40)<br>Incorrectly identified pseudo words: <b>' + incorr_nonword +
