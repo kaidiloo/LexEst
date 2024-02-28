@@ -61,7 +61,7 @@ function lexclick(lexrespd) {
         }
         // counting when participants said incorrectly yes to nonwords
      } else if (lexstim_item.wstatus === 0 && lexrespd === 'yes') {
-        corrresp = 'no';
+        corrresp = 'yes';
         if (lexstim_item.dummy === 0) {
             incorr_nonword++;
      }
