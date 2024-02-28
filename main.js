@@ -86,7 +86,7 @@ function lexclick(lexrespd) {
 
         console.log('Correctly identified real words: ' + corr_word +
             '\nIncorrectly identified pseudo words: ' + incorr_nonword +
-            '\nLexTALE score: ' + lex_score + '%');
+            '\nLexTALE score: ' + lex_score);
 
         document.getElementById('end_summary_id').innerHTML =
             '<span style="font-variant: small-caps;">LexTALE score: <b>' + lex_score.toFixed(2) +
