@@ -1,5 +1,4 @@
 lex_dict = {
-
         'et': [
         { 'word': 'platery', 'wstatus': 0, 'dummy': 1 },
         { 'word': 'denial', 'wstatus': 1, 'dummy': 1 },
