@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-let lexlang = 'en'; // English: 'en', German: 'de', Dutch: 'nl', Chinese: 'ch1', Chinese incl. English: 'ch2'
+let lexlang =  'et'; // Estonian: 'en', 'en'; // English: 'en', German: 'de', Dutch: 'nl', Chinese: 'ch1', Chinese incl. English: 'ch2'
 
 let path_imgs = './ch_items/';
 
