@@ -89,8 +89,8 @@ lex_dict = {
         { 'word': 'niim', 'wstatus': 0, 'dummy': 0 },
         { 'word': 'rainama', 'wstatus': 0, 'dummy': 0 },
         { 'word': 'sagima', 'wstatus': 1, 'dummy': 0 },
-        { 'word': 'käver', 'wstatus': 1, 'dummy': 0 },
-        { 'word': 'pammas', 'wstatus': 1, 'dummy': 0 },
+        { 'word': 'käver', 'wstatus': 0, 'dummy': 0 },
+        { 'word': 'pammas', 'wstatus': 0, 'dummy': 0 },
         { 'word': 'mälu', 'wstatus': 1, 'dummy': 0 },
         { 'word': 'vaen', 'wstatus': 1, 'dummy': 0 }      
     ],
