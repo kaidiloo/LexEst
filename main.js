@@ -90,8 +90,8 @@ function lexclick(lexrespd) {
 
         document.getElementById('end_summary_id').innerHTML =
             '<span style="font-variant: small-caps;">LexEsti skoor: <b>' + lex_score + 
-            '</b> (maksimum 60)</span></b><br>Õigesti tuvastatud päris sõnade arv: <b>' + corr_word +
-            '</b> (maksimum 60)<br>Valesti tuvastatud väljamõeldud sõnade arv: <b>' + incorr_nonword +
+            '</b> (maksimum 60)</span></b><br>Õigesti vastatud eesti keele sõnade arv: <b>' + corr_word +
+            '</b> (maksimum 60)<br>Valesti vastatud väljamõeldud sõnade arv: <b>' + incorr_nonword +
             '</b> (maksimum 30)' + get_times();
     }
 }
