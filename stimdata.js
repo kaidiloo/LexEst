@@ -92,8 +92,7 @@ lex_dict = {
         { 'word': 'käver', 'wstatus': 1, 'dummy': 0 },
         { 'word': 'pammas', 'wstatus': 1, 'dummy': 0 },
         { 'word': 'mälu', 'wstatus': 1, 'dummy': 0 },
-        { 'word': 'vaen', 'wstatus': 1, 'dummy': 0 }
-          
+        { 'word': 'vaen', 'wstatus': 1, 'dummy': 0 }      
     ],
     'en': [
         { 'word': 'platery', 'wstatus': 0, 'dummy': 1 },
