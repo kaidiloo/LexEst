@@ -89,9 +89,9 @@ function lexclick(lexrespd) {
             '\nLexTALE score: ' + lex_score);
 
         document.getElementById('end_summary_id').innerHTML =
-            '<span style="font-variant: small-caps;">LexTale score: <b>' + lex_score + 
-            '</b> (out of ... %)</span></b><br>Correctly identified real words: <b>' + corr_word +
-            '</b> (out of 40)<br>Incorrectly identified pseudo words: <b>' + incorr_nonword +
+            '<span style="font-variant: small-caps;">LexEsti skoor: <b>' + lex_score + 
+            '</b> (out of ... %)</span></b><br>Õigesti tuvastatud päris sõnade arv: <b>' + corr_word +
+            '</b> (out of 40)<br>Valesti tuvastatud väljamõeldud sõnade arv: <b>' + incorr_nonword +
             '</b> (out of 20)' + get_times();
     }
 }
@@ -101,8 +101,8 @@ function get_times() {
     console.log(basic_times);
     let t_full = basic_times.test_end - basic_times.intro_shown;
     let t_test = basic_times.test_end - basic_times.test_start;
-    return '<br><br>Duration from instruction shown to test completed: ' +
-        format_ms(t_full) + '<br>Duration of test part only: ' + format_ms(t_test);
+    return '<br><br> Katseaeg juhistest katselõpuni: ' +
+        format_ms(t_full) + '<br>Ainult katse tegemise aeg: ' + format_ms(t_test);
 }
 
 function format_ms(milis) {
