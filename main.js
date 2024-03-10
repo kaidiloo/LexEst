@@ -101,8 +101,8 @@ function get_times() {
     console.log(basic_times);
     let t_full = basic_times.test_end - basic_times.intro_shown;
     let t_test = basic_times.test_end - basic_times.test_start;
-    return '<br><br> Katseaeg juhistest katselõpuni: ' +
-        format_ms(t_full) + '<br>Ainult katse tegemise aeg: ' + format_ms(t_test);
+    return '<br><br> Katseaeg juhistest testi lõpuni: ' +
+        format_ms(t_full) + '<br>Ainult testi tegemisele kulunud aeg: ' + format_ms(t_test);
 }
 
 function format_ms(milis) {
