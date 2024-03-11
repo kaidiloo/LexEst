@@ -1,3 +1,6 @@
+### LexEst
+Web-based (HTML/JavaScript) implementation of the Estionan vocabulary test LexEst (Lõo, Leppik, Malmi, Bleive, Bertram in preparation) based on of the original *LexTALE* (English, German, Dutch; Lemhöfer & Broersma, 2012) using the code by Gaspar Lukas (https://github.com/gasparl/lextale). However, note the different score calculation based on newer version in newer languag additions (see e.g., Spanish Lextale-Esp: Izura et al. 2013, Finnish Lexize: Salmela et al 2021). The test is in Estonian. For more information on LexEst, see https://sisu.ut.ee/lexest.
+
 ### LexTALE(_CH)
 
 Web-based (HTML/JavaScript) and PsychoPy (Python) implementations of the original *LexTALE* (English, German, Dutch; Lemhöfer & Broersma, 2012) and *LexTALE_CH* (Mandarin Chinese; Chan & Chang, 2018).
